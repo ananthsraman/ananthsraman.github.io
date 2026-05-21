@@ -55,21 +55,25 @@
     }
 
     .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-      align-items: center;
-    }
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  align-items: center; /* This ensures the flex items themselves align */
+}
 
-    .nav-links a {
-      font-family: var(--mono);
-      font-size: 0.7rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+.nav-links a {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-decoration: none;
+  transition: color 0.2s;
+  
+  /* ADD THESE TWO LINES */
+  display: inline-flex;
+  align-items: center;
+}
 
     .nav-links a:hover { color: var(--accent); }
 
